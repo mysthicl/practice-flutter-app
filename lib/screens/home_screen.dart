@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
 import 'package:tipicos_jholy/screens/checkout_screen.dart';
+import 'package:tipicos_jholy/screens/order_summary_screen.dart';
 import '../models/product.dart';
 import '../providers/cart_provider.dart';
 
@@ -90,12 +91,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ? () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (_) => const CheckoutScreen()),
+                  MaterialPageRoute(builder: (_) => const OrderSummaryScreen()),
                 );
               }
             : null,
         label: const Text('Cobrar'),
-        icon: const Icon(Icons.attach_money),
+        icon: const Icon(Icons.receipt_long),
       ),
     );
   }

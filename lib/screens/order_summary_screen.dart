@@ -9,13 +9,14 @@ class OrderSummaryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final cart = Provider.of<CartProvider>(context);
-    final items = cart.items;
+    // CartProvider.items es un Map<Product, int>
+    final entries = cart.items.entries.toList(); // List<MapEntry<Product,int>>
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('Resumen del pedido'),
       ),
-      body: items.isEmpty
+      body: entries.isEmpty
           ? const Center(
               child: Text('No hay productos seleccionados'),
             )
@@ -25,17 +26,21 @@ class OrderSummaryScreen extends StatelessWidget {
                 children: [
                   Expanded(
                     child: ListView.separated(
-                      itemCount: items.length,
+                      itemCount: entries.length,
                       separatorBuilder: (_, __) =>
                           const Divider(color: Colors.grey),
                       itemBuilder: (context, index) {
-                        final item = items[index];
+                        final entry = entries[index];
+                        final product = entry.key;
+                        final quantity = entry.value;
+                        final subtotal = product.price * quantity;
+
                         return ListTile(
-                          title: Text(item.product.name),
+                          title: Text(product.name),
                           subtitle: Text(
-                              '${item.quantity} x \$${item.product.price.toStringAsFixed(2)}'),
+                              '$quantity x \$${product.price.toStringAsFixed(2)}'),
                           trailing: Text(
-                            '\$${(item.quantity * item.product.price).toStringAsFixed(2)}',
+                            '\$${subtotal.toStringAsFixed(2)}',
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
                             ),

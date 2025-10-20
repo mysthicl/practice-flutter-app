@@ -1,15 +1,7 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:provider/provider.dart';
 import 'package:tipicos_jholy/providers/cart_provider.dart';
-import 'models/product.dart';
 import 'screens/home_screen.dart';
-import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import 'models/product.dart';
-import 'screens/home_screen.dart';
-import 'providers/cart_provider.dart';
 
 void main() {
   runApp(

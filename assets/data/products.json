@@ -1,0 +1,18 @@
+[
+  {
+    "category": "Pupusas",
+    "items": [
+      { "name": "Pupusa de queso", "price": 0.50 },
+      { "name": "Pupusa revuelta", "price": 0.60 },
+      { "name": "Pupusa de frijol con queso", "price": 0.55 }
+    ]
+  },
+  {
+    "category": "Bebidas",
+    "items": [
+      { "name": "Fresco de horchata", "price": 0.75 },
+      { "name": "Coca-Cola", "price": 1.00 },
+      { "name": "Agua", "price": 0.50 }
+    ]
+  }
+]

@@ -49,7 +49,7 @@ class OrderSummaryScreen extends StatelessWidget {
                       },
                     ),
                   ),
-                  const Divider(thickness: 1.5),
+                  const Divider(thickness: 2.5),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [

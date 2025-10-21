@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tipicos_jholy/providers/cart_provider.dart';
+import 'package:tipicos_jholy/screens/home_screen.dart';
 
 class CheckoutScreen extends StatefulWidget{
   const CheckoutScreen({super.key});
@@ -94,7 +95,12 @@ class _CheckoutScreenState extends State<CheckoutScreen>{
                       duration: Duration(seconds: 2),
                     ),
                     );
-                    Navigator.pop(context);
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => const HomeScreen(),
+                      ),
+                    );
                 } 
                 : null,
               ),

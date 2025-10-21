@@ -68,15 +68,15 @@ class _HomeScreenState extends State<HomeScreen> {
                         mainAxisSize: MainAxisSize.min,
                         children: [
                           IconButton(
-                            icon: const Icon(Icons.remove_circle_outline),
+                            icon: const Icon(Icons.remove_circle_outline, size: 32,),
                             onPressed: qty > 0
                                 ? () => cart.removeProduct(product)
                                 : null,
                           ),
                           Text('$qty',
-                              style: const TextStyle(fontSize: 16)),
+                              style: const TextStyle(fontSize: 24)),
                           IconButton(
-                            icon: const Icon(Icons.add_circle_outline),
+                            icon: const Icon(Icons.add_circle_outline, size: 32,),
                             onPressed: () => cart.addProduct(product),
                           ),
                         ],

@@ -2,17 +2,21 @@
   {
     "category": "Pupusas",
     "items": [
-      { "name": "Pupusa de queso", "price": 0.50 },
-      { "name": "Pupusa revuelta", "price": 0.60 },
-      { "name": "Pupusa de frijol con queso", "price": 0.55 }
+      { "name": "Pupusa de Frijol", "price": 0.50 },
+      { "name": "Pupusas de Chicharron / Espinaca / Chipilin / Ajo / Ayote / Jalapeño", "price": 0.75 },
+      { "name": "Pupusas de Loroco / Pollo / Revueltas / Queso", "price": 1.00 },
+      {"name": "Pupusas Locas", "prince": 1.50 }
     ]
   },
   {
     "category": "Bebidas",
     "items": [
-      { "name": "Fresco de horchata", "price": 0.75 },
-      { "name": "Coca-Cola", "price": 1.00 },
-      { "name": "Agua", "price": 0.50 }
+      { "name": "Cafe Negro", "price": 0.35 },
+      { "name": "Cafe con Cremora", "price": 0.40 },
+      { "name": "Fresco / Chocolate / Coquita", "price": 0.50 },
+      { "name": "Sodas / Jugos / Agua", "price": 1.00 },
+      { "name": "Gatorade / Té", "price": 1.25 },
+      { "name": "Aloe", "price": 1.50 }
     ]
   }
 ]

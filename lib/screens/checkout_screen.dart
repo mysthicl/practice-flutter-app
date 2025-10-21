@@ -80,10 +80,10 @@ class _CheckoutScreenState extends State<CheckoutScreen>{
             SizedBox(
               width: double.infinity,
               child: ElevatedButton.icon(
-                icon: const Icon(Icons.check_circle_outline),
-                label: const Text('Confirmar venta'),
+                icon: const Icon(Icons.check_circle_outline, size: 24,),
+                label: const Text('Finalizar venta', style: TextStyle(fontSize: 18),),
                 style: ElevatedButton.styleFrom(
-                  padding: const EdgeInsets.symmetric(vertical: 14),
+                  padding: const EdgeInsets.symmetric(vertical: 16),
                   backgroundColor: Colors.green,
                   foregroundColor: Colors.white,
                 ),

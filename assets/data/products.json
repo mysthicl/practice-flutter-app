@@ -5,7 +5,7 @@
       { "name": "Pupusa de Frijol", "price": 0.50 },
       { "name": "Pupusas de Chicharron / Espinaca / Chipilin / Ajo / Ayote / Jalapeño", "price": 0.75 },
       { "name": "Pupusas de Loroco / Pollo / Revueltas / Queso", "price": 1.00 },
-      {"name": "Pupusas Locas", "prince": 1.50 }
+      {"name": "Pupusas Locas", "price": 1.50 }
     ]
   },
   {
